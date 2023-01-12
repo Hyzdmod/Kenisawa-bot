@@ -20,4 +20,4 @@ COPY . .
 
 EXPOSE 5000/tcp
 
-CMD ["npm", "start"]
+CMD ["bash", "start.sh"]
