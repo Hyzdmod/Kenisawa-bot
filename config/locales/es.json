@@ -1,0 +1,23 @@
+{
+    "wait": "Espere un momento...",
+    "message": {
+        "limit_run_out": "Se acabó tu límites.",
+        "owner_only": "Lo sentimos, este comando solo para el propietario.",
+        "premium_only": "Lo sentimos, este comando solo para usuarios premium.",
+        "private_only": "Lo siento, este comando solo para chat privado..",
+        "group_only": "Lo siento, este comando solo para grupo.",
+        "admin_only": "Lo sentimos, este comando solo para el admin del grupo.",
+        "cooldown": "Enfriamiento, por favor espera {{cooldown}} segundos de nuevo."
+    },
+    "command": {
+        "not_found": "El comando {{command}} extraviado."
+    },
+    "game": {
+        "finish_last_first": "Please complete last game first.",
+        "right_answer": "Right! You received {{xp}} XP!",
+        "timeout_answer": "Timeout, answer is : {{answer}}."
+    },
+    "sticker": {
+        "no_media": "Responda una imagen o video con este comando."
+    }
+}

@@ -1,0 +1,19 @@
+const { youtube } = require('@libs/utils/scrapper/download/youtube')
+
+/**
+ * @type { import('@libs/builders/command').ICommand }
+ */
+module.exports = {
+    aliases: ['yta', 'ytaudio'],
+    category: 'youtube',
+    description: 'Descargador de Audio de YouTube.',
+    waitMessage: true,
+    minArgs: 1,
+    expectedArgs: '<link>',
+    example: '{prefix}{command} https://www.youtube.com/watch?v=eZskFo64rs8',
+    callback: async ({ msg, args }) => {
+        const result = await youtube(args[0], 'mp3')
+        await msg.replyImage({ url: result.thumbnail }, `${result.title} - ${result.size}`)
+        await msg.replyAudio({ url: result.link })
+    },
+}
